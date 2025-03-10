@@ -1,6 +1,6 @@
-package com.exercise.domains;
+package com.exercise.exchangepay.domains;
 
-import com.exercise.domains.enums.UserType;
+import com.exercise.exchangepay.domains.enums.UserType;
 
 import java.time.LocalDate;
 

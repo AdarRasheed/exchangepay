@@ -1,4 +1,4 @@
-package com.exercise.dtos;
+package com.exercise.exchangepay.dtos;
 
 import java.time.LocalDate;
 import java.util.List;

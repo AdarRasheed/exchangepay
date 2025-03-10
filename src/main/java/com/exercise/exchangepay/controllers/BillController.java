@@ -1,8 +1,8 @@
-package com.exercise.controllers;
+package com.exercise.exchangepay.controllers;
 
-import com.exercise.dtos.BillDTO;
-import com.exercise.dtos.BillStatementDTO;
-import com.exercise.services.BillService;
+import com.exercise.exchangepay.dtos.BillDTO;
+import com.exercise.exchangepay.dtos.BillStatementDTO;
+import com.exercise.exchangepay.services.BillService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

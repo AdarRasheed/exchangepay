@@ -1,4 +1,4 @@
-package com.exercise.transformers;
+package com.exercise.exchangepay.transformers;
 
 import java.util.List;
 import java.util.stream.Collectors;

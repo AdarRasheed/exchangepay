@@ -1,11 +1,11 @@
-package com.exercise.transformers;
+package com.exercise.exchangepay.transformers;
 
-import com.exercise.domains.Bill;
-import com.exercise.domains.Item;
-import com.exercise.domains.User;
-import com.exercise.domains.enums.UserType;
-import com.exercise.dtos.BillDTO;
-import com.exercise.dtos.ItemDTO;
+import com.exercise.exchangepay.domains.Bill;
+import com.exercise.exchangepay.domains.Item;
+import com.exercise.exchangepay.domains.User;
+import com.exercise.exchangepay.domains.enums.UserType;
+import com.exercise.exchangepay.dtos.BillDTO;
+import com.exercise.exchangepay.dtos.ItemDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

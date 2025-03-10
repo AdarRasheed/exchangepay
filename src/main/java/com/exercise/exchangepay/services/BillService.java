@@ -1,12 +1,12 @@
-package com.exercise.services;
+package com.exercise.exchangepay.services;
 
-import com.exercise.domains.Bill;
-import com.exercise.domains.BillStatement;
-import com.exercise.dtos.BillDTO;
-import com.exercise.dtos.BillStatementDTO;
-import com.exercise.services.special.DiscountService;
-import com.exercise.transformers.BillStatementTransformer;
-import com.exercise.transformers.BillTransformer;
+import com.exercise.exchangepay.domains.Bill;
+import com.exercise.exchangepay.domains.BillStatement;
+import com.exercise.exchangepay.dtos.BillDTO;
+import com.exercise.exchangepay.dtos.BillStatementDTO;
+import com.exercise.exchangepay.services.special.DiscountService;
+import com.exercise.exchangepay.transformers.BillStatementTransformer;
+import com.exercise.exchangepay.transformers.BillTransformer;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;

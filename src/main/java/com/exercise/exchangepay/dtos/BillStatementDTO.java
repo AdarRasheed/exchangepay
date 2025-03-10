@@ -1,16 +1,15 @@
-package com.exercise.domains;
+package com.exercise.exchangepay.dtos;
 
 import java.math.BigDecimal;
 
+public class BillStatementDTO {
 
-public class BillStatement {
+    private String currency;
+    private BigDecimal totalAmount;
+    private BigDecimal discountApplied;
+    private BigDecimal finalAmount;
 
-    private final String currency;
-    private final BigDecimal totalAmount;
-    private final BigDecimal discountApplied;
-    private final BigDecimal finalAmount;
-
-    public BillStatement(String currency, BigDecimal totalAmount, BigDecimal discountApplied, BigDecimal finalAmount) {
+    public BillStatementDTO(String currency, BigDecimal totalAmount, BigDecimal discountApplied, BigDecimal finalAmount) {
         this.currency = currency;
         this.totalAmount = totalAmount;
         this.discountApplied = discountApplied;
@@ -35,7 +34,7 @@ public class BillStatement {
 
     @Override
     public String toString() {
-        return "BillStatement{" +
+        return "BillStatementDTO{" +
                 "currency='" + currency + '\'' +
                 ", totalAmount=" + totalAmount +
                 ", discountApplied=" + discountApplied +
@@ -73,9 +72,8 @@ public class BillStatement {
             return this;
         }
 
-        public BillStatement build() {
-            return new BillStatement(currency, totalAmount, discountApplied, finalAmount);
+        public BillStatementDTO build() {
+            return new BillStatementDTO(currency, totalAmount, discountApplied, finalAmount);
         }
     }
-
 }

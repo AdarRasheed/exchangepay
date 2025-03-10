@@ -1,7 +1,7 @@
-package com.exercise.transformers;
+package com.exercise.exchangepay.transformers;
 
-import com.exercise.domains.BillStatement;
-import com.exercise.dtos.BillStatementDTO;
+import com.exercise.exchangepay.domains.BillStatement;
+import com.exercise.exchangepay.dtos.BillStatementDTO;
 import org.springframework.stereotype.Component;
 
 @Component

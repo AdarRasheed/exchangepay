@@ -1,4 +1,4 @@
-package com.exercise.services;
+package com.exercise.exchangepay.services;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,6 @@
-package com.exercise.domains;
+package com.exercise.exchangepay.domains;
 
-import com.exercise.domains.enums.ItemCategory;
+import com.exercise.exchangepay.domains.enums.ItemCategory;
 
 import java.math.BigDecimal;
 

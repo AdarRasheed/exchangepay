@@ -1,4 +1,4 @@
-package com.exercise.handlers;
+package com.exercise.exchangepay.handlers;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 

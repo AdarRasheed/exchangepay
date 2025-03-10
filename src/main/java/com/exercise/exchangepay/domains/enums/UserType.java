@@ -1,4 +1,4 @@
-package com.exercise.domains.enums;
+package com.exercise.exchangepay.domains.enums;
 
 public enum UserType {
 

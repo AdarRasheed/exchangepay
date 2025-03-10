@@ -1,8 +1,8 @@
-package com.exercise.transformers;
+package com.exercise.exchangepay.transformers;
 
-import com.exercise.domains.Item;
-import com.exercise.domains.enums.ItemCategory;
-import com.exercise.dtos.ItemDTO;
+import com.exercise.exchangepay.domains.Item;
+import com.exercise.exchangepay.domains.enums.ItemCategory;
+import com.exercise.exchangepay.dtos.ItemDTO;
 import io.micrometer.common.util.StringUtils;
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,6 @@
-package com.exercise.domains;
+package com.exercise.exchangepay.domains;
 
-import com.exercise.services.special.DiscountService;
+import com.exercise.exchangepay.services.special.DiscountService;
 
 import java.math.BigDecimal;
 import java.util.List;

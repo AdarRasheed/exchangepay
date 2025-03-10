@@ -1,6 +1,6 @@
-package com.exercise.services.special;
+package com.exercise.exchangepay.services.special;
 
-import com.exercise.domains.Bill;
+import com.exercise.exchangepay.domains.Bill;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
