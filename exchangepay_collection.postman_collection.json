@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "1f824378-602d-48eb-8893-84b6d7fd9b16",
+		"name": "exchangepay_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3445600",
+		"_collection_link": "https://warped-eclipse-8435.postman.co/workspace/exchangepay~9f4ccd71-1577-4206-9a66-8c1fc803c9b2/collection/3445600-1f824378-602d-48eb-8893-84b6d7fd9b16?action=share&source=collection_link&creator=3445600"
+	},
+	"item": [
+		{
+			"name": "Bill Calculation API",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "exchangepay_secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "exchangepay_user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"12345\",\r\n    \"userType\": \"EMPLOYEE\",\r\n    \"itemDTOs\": [\r\n    {\r\n      \"id\": \"item-001\",\r\n      \"category\": \"DURABLE_GOODS\",\r\n      \"price\": 199.99\r\n    },\r\n    {\r\n      \"id\": \"item-002\",\r\n      \"category\": \"NON_DURABLE_GOODS\",\r\n      \"price\": 15.50\r\n    }\r\n  ],\r\n    \"customerSince\": \"2020-05-15\",\r\n    \"originalCurrency\": \"USD\",\r\n    \"targetCurrency\": \"EUR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bill/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bill",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
