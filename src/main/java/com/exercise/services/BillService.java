@@ -14,6 +14,9 @@ import java.math.BigDecimal;
 @Component
 public class BillService {
 
+    private static final int SCALE = 2;
+    private static final BigDecimal ONE = BigDecimal.ONE; // Used to force rounding
+
     private final BillTransformer billTransformer;
     private final BillStatementTransformer billStatementTransformer;
 
@@ -40,12 +43,15 @@ public class BillService {
         String originalCurrency = statement.getCurrency();
         BigDecimal exchangeRate = currencyExchangeService.getExchangeRate(originalCurrency, targetCurrency);
         return BillStatement.builder()
-                .totalAmount(statement.getTotalAmount().multiply(exchangeRate)
-                        .setScale(2))
-                .discountApplied(statement.getDiscountApplied().multiply(exchangeRate)
-                        .setScale(2))
-                .finalAmount(statement.getFinalAmount().multiply(exchangeRate)
-                        .setScale(2))
+                .totalAmount(statement.getTotalAmount()
+                        .multiply(exchangeRate)
+                        .divide(ONE, SCALE, BigDecimal.ROUND_HALF_UP))
+                .discountApplied(statement.getDiscountApplied()
+                        .multiply(exchangeRate)
+                        .divide(ONE, SCALE, BigDecimal.ROUND_HALF_UP))
+                .finalAmount(statement.getFinalAmount()
+                        .multiply(exchangeRate)
+                        .divide(ONE, SCALE, BigDecimal.ROUND_HALF_UP))
                 .currency(targetCurrency)
                 .build();
     }
