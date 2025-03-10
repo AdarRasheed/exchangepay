@@ -1,8 +1,8 @@
 package com.exercise.exchangepay.services;
 
 import com.exercise.exchangepay.dtos.ExchangeRateDTO;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -10,7 +10,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.math.BigDecimal;
 
 @Service
-@Slf4j
+@Cacheable(value = "exchangeRates", key = "#fromCurrency + '-' + #toCurrency")
 public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
 
     @Value("${exchange.api_url}")

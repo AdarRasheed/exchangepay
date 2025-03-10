@@ -1,13 +1,11 @@
 package com.exercise.exchangepay.services.special;
 
 import com.exercise.exchangepay.domains.Bill;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
 @Component
-@RequiredArgsConstructor
 public class DiscountService {
 
     public BigDecimal calculateTotalDiscount(Bill bill) {
