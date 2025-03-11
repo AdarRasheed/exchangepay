@@ -35,7 +35,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userId\": \"12345\",\r\n    \"userType\": \"EMPLOYEE\",\r\n    \"itemDTOs\": [\r\n    {\r\n      \"id\": \"item-001\",\r\n      \"category\": \"DURABLE_GOODS\",\r\n      \"price\": 199.99\r\n    },\r\n    {\r\n      \"id\": \"item-002\",\r\n      \"category\": \"NON_DURABLE_GOODS\",\r\n      \"price\": 15.50\r\n    }\r\n  ],\r\n    \"customerSince\": \"2020-05-15\",\r\n    \"originalCurrency\": \"USD\",\r\n    \"targetCurrency\": \"EUR\"\r\n}",
+					"raw": "{\r\n    \"userId\": \"12345\",\r\n    \"userType\": \"EMPLOYEE\",\r\n    \"itemDTOs\": [\r\n    {\r\n      \"id\": \"item-001\",\r\n      \"category\": \"GROCERY\",\r\n      \"price\": 20\r\n    },\r\n    {\r\n      \"id\": \"item-002\",\r\n      \"category\": \"ELECTRONIC\",\r\n      \"price\": 15.50\r\n    }\r\n  ],\r\n    \"customerSince\": \"2020-05-15\",\r\n    \"originalCurrency\": \"USD\",\r\n    \"targetCurrency\": \"EUR\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
