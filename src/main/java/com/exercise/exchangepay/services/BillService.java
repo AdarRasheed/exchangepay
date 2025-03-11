@@ -4,7 +4,7 @@ import com.exercise.exchangepay.domains.Bill;
 import com.exercise.exchangepay.domains.BillStatement;
 import com.exercise.exchangepay.dtos.BillDTO;
 import com.exercise.exchangepay.dtos.BillStatementDTO;
-import com.exercise.exchangepay.services.special.DiscountService;
+import com.exercise.exchangepay.services.discount.DiscountService;
 import com.exercise.exchangepay.transformers.BillStatementTransformer;
 import com.exercise.exchangepay.transformers.BillTransformer;
 import org.springframework.stereotype.Component;

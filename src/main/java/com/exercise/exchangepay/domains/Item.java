@@ -35,6 +35,10 @@ public class Item {
         return price;
     }
 
+    public boolean isGrocery(){
+        return category.equals(ItemCategory.GROCERY);
+    }
+
     @Override
     public String toString() {
         return "Item{" +

@@ -29,6 +29,18 @@ public class User {
         return customerSince;
     }
 
+    public boolean isEmployee() {
+        return type.equals(UserType.EMPLOYEE);
+    }
+
+    public boolean isAffiliate() {
+        return type.equals(UserType.AFFILIATE);
+    }
+
+    public boolean isRecurringCustomer() {
+        return customerSince.plusYears(2).isBefore(LocalDate.now());
+    }
+
     @Override
     public String toString() {
         return "User{" +

@@ -1,6 +1,6 @@
 package com.exercise.exchangepay.domains;
 
-import com.exercise.exchangepay.services.special.DiscountService;
+import com.exercise.exchangepay.services.discount.DiscountService;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -39,6 +39,13 @@ public class Bill {
                 .discountApplied(totalDiscount)
                 .finalAmount(totalAfterDiscount)
                 .build();
+    }
+
+    public BigDecimal getDiscountableTotal() {
+        return items.stream()
+                .filter(item -> !item.isGrocery()) // Exclude groceries
+                .map(Item::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
     private BigDecimal getTotalAmount(){
