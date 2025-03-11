@@ -76,4 +76,20 @@ public class BillStatementDTO {
             return new BillStatementDTO(currency, totalAmount, discountApplied, finalAmount);
         }
     }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public void setTotalAmount(BigDecimal totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public void setDiscountApplied(BigDecimal discountApplied) {
+        this.discountApplied = discountApplied;
+    }
+
+    public void setFinalAmount(BigDecimal finalAmount) {
+        this.finalAmount = finalAmount;
+    }
 }

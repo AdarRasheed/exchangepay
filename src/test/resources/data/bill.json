@@ -1,0 +1,19 @@
+{
+  "userId": "12345",
+  "userType": "EMPLOYEE",
+  "itemDTOs": [
+    {
+      "id": "item-001",
+      "price": 80.00,
+      "category": "ELECTRONICS"
+    },
+    {
+      "id": "item-002",
+      "price": 90.00,
+      "category": "SPORTS"
+    }
+  ],
+  "customerSince": "2025-01-14",
+  "targetCurrency": "USD",
+  "originalCurrency": "EUR"
+}
