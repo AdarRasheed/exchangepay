@@ -4,6 +4,20 @@
 
 Note:- An export of the postman collection has also been provided alongside the sourcecode, it demonstrates how to authenticate and hit the request properly
 
+## Things Accomplished So Far:
+
+- **Clean code principles** followed with **meaningful names** and **consistent formatting**
+- **SOLID Principles** idealized and **Design Patterns** such as **`Builder`** and **`Transformer`** utilized
+- **N-Tier Architectural Pattern** implemented
+- **Java best practices** followed, avoiding **`null`** values, handling **exceptions**, and **encapsulating data**
+- **Spring Boot best practices** followed with **smart dependency injection**, **configuration management**, and **API design**
+- **Maven** utilized for **structured package organization**, **project dependencies management**, and **builds**
+- **Decoupled components** setup, with **no hardcoded dependencies or passwords**, ensuring **scalability and security**
+- **Proper branching and tracking** best practices followed for **individual features delivery**
+- **Test cases** established for API (**further and extensive coverage is possible and much recommended**)
+- **Smart discount feature** introduced utilizing **`Strategy` Design Pattern**
+- **Swagger integrated** for **thorough API and models documentation**
+
 ## Prerequisites
 
 ### Java Version
